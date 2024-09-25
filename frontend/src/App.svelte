@@ -2,6 +2,7 @@
   import * as App from "../wailsjs/go/main/App.js";
   import { fade } from "svelte/transition";
 
+  // 初期化
   let inputPDFPath = "";
   let stampImagePath = "";
   let outputDirectory = "";
