@@ -2,10 +2,10 @@
   import * as App from "../wailsjs/go/main/App.js";
   import { fade } from "svelte/transition";
 
-  let inputPDFPath = "C:/Users/Shige/Downloads/test2.pdf";
-  let stampImagePath = "C:/Users/Shige/Pictures/清印鑑2.png";
-  let outputDirectory = "C:/Users/Shige/Desktop/test";
-  let outputFileName = "stamped_output";
+  let inputPDFPath = "";
+  let stampImagePath = "";
+  let outputDirectory = "";
+  let outputFileName = "";
   let message = "";
 
   // 入力PDFを選択
@@ -111,7 +111,7 @@
 
   <!-- メッセージ -->
   {#if message}
-    <p class="message" transition:fade >{message}</p>
+    <p class="message" transition:fade>{message}</p>
   {/if}
 </main>
 
